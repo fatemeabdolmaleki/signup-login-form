@@ -1,0 +1,336 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+    font-family: "Akaya Kanadaka", system-ui;
+    
+}
+.box{
+    width: 75%;
+    height: 75%;
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+    display: flex;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0 0 30px #72A0C1;
+
+    >.login{
+
+        width: 50%;
+        height: 100%;
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: center;
+
+        >.form1{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            >*{
+                width: 100%;
+            }
+            >h1{
+                font-size: 60px;
+                text-align: center;
+                margin-top: 20px;
+            }
+            >.Inp1{
+                width: 70%;
+                height: 45px;
+                display: flex;
+                position: relative;
+                background-color: transparent;
+                box-shadow: 0px 0px 40px #72A0C1;
+                border-radius: 15px;
+               
+                >*{
+                   
+                    font-size: 20px;
+                }
+                >.lock{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 10px;
+                    cursor: pointer;
+                    >i{
+                        color: gray;
+                        position: absolute;
+                        top: -7px;
+                        right: 0;
+                        &:nth-of-type(2){
+                            opacity: 0;
+                        }
+                    }
+                }
+                >input{
+                    width: 100%;
+                    height: 100%;
+                    outline: none;
+                    border: none;
+                    left: 10px;
+                    background-color:transparent;
+                    border-radius: 15px;
+                    padding: 13px 50px 13px 20px;
+                }
+                >i{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: gray;
+                    right: 10px;
+                    
+                }
+                >span{
+                    position: absolute;
+                    bottom: -30px;
+                    left: 10px;
+                    color: red;
+                }
+        
+            }
+            >.btn1{
+                width: 60%;
+                height: 45px;
+                border: none;
+                outline: none;
+                border-radius: 20px;
+                cursor: pointer;
+                font-size: 20px;
+                background-color: #72A0C1;
+                color: white;
+            }
+            >.signupLink{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-top: -20px;
+                font-size: 20px;
+                >p{
+                    margin-right: 10px;
+                }
+                >a{
+                    text-decoration: none;
+                    color: #437091;
+                    text-transform: capitalize;
+            
+                }
+            }
+        }
+    }
+    
+    >.signup{
+        width: 50%;
+        height: 100%;
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: center;
+        >.form2{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            >*{
+                width: 100%;
+            }
+            >h1{
+                font-size: 60px;
+                text-align: center;
+                margin-top: 20px;
+            }
+            >.Inp2{
+                width: 70%;
+                height: 45px;
+                display: flex;
+                position: relative;
+                box-shadow: 0px 0px 40px #72A0C1;
+                border-radius: 15px;
+               
+                >*{
+                   
+                    font-size: 20px;
+                }
+               
+                >input{
+                    width: 100%;
+                    height: 100%;
+                    outline: none;
+                    border: none;
+                    left: 10px;
+                    background-color:transparent;
+                    padding: 13px 50px 13px 20px;
+                    border-radius: 15px;
+                }
+                >i{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 10px;
+                    color: gray;
+                }
+                >span{
+                    position: absolute;
+                    bottom: -30px;
+                    left: 10px;
+                    color: red;
+                }
+                >p{
+                    position: absolute;
+                    bottom: -30px;
+                    right: -30px;
+                    text-transform: capitalize;
+                }
+             
+        
+            }
+            >.btn2{
+                width: 60%;
+                height: 45px;
+                border: none;
+                outline: none;
+                border-radius: 20px;
+                cursor: pointer;
+                font-size: 20px;
+                background-color: #72A0C1;
+                color: white;
+            }
+            >.loginLink{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-top: -20px;
+                font-size: 20px;
+                >p{
+                    margin-right: 10px;
+                }
+                >a{
+                    text-decoration: none;
+                    color:#437091;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+    >.box2{
+        position: absolute;
+        top: -37px;
+        left: -10px;
+        width: 52%;
+        height:110%;
+        border-radius: 30px;
+        transition: .7s;
+        >img{
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+            z-index: 1000;
+            border-radius: 30px;
+        }
+    }
+}
+.me {
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    bottom: 40px;
+    right: 5px;
+    z-index: 1001;
+    /* border: 1px solid red; */
+
+    >div {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: red;
+
+
+        &:first-of-type {
+            border-radius: 49% 51% 46% 54% / 74% 77% 23% 26%;
+            background-color: #424965;
+            animation: anime2 infinite alternate 2s;
+
+        }
+
+        &:last-of-type {
+            background-image: url(../img/fateme.jpg);
+            background-size: cover;
+            border-radius: 49% 51% 46% 54% / 37% 31% 69% 63%;
+            animation: anime1 infinite alternate 2s;
+
+        }
+    }
+
+    &:hover {
+        >a {
+            left: -30px;
+            opacity: 1;
+
+            &:nth-of-type(2) {
+                left: -70px;
+            }
+
+            &:nth-of-type(3) {
+                left: -70px;
+            }
+
+            &:nth-of-type(4) {
+                left: -30px;
+            }
+        }
+    }
+
+    >a {
+        position: absolute;
+        left: 30px;
+        text-decoration: none;
+        font-size: 30px;
+        transition: 1s;
+        color: aliceblue;
+        opacity: 0;
+
+        &:first-of-type {
+            top: 0;
+
+        }
+
+        &:nth-of-type(2) {
+            top: 40px;
+        }
+
+        &:nth-of-type(3) {
+            top: 90px;
+        }
+
+        &:nth-of-type(4) {
+            top: 140px;
+        }
+
+    }
+
+
+}
+
+@keyframes anime1 {
+    to {
+        border-radius: 49% 51% 48% 52% / 46% 46% 54% 54%;
+    }
+}
+
+@keyframes anime2 {
+    to {
+        border-radius: 70% 30% 44% 56% / 46% 34% 66% 54%;
+    }
+}
